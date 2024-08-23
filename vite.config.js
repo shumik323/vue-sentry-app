@@ -18,7 +18,9 @@ const viteSentryConfig = {
   release: {
     name: `${packageInfo.name}@${packageInfo.version}`,
   },
-  setCommits: '',
+  setCommits: {
+    auto: true,
+  },
   sourceMaps: {
     include: ["./dist/assets/"],
     ignore: ["node_modules"],
